@@ -2,11 +2,13 @@
 <html>
 <head>
 <style type="text/css">
- h1, h3{border: 5px solid grey;
-       
+ h1{
+ 	border-radius: 0.5em;
+
+        
     }
 form{margin: 2px;
-     border:20px;
+     border:radium;
      padding:initial;
 
 }
@@ -20,30 +22,76 @@ vspace=3;
 hspace=3; 
 
 }
+.imgderecha{
+	margin: right;
+}
 p{
 border: 5px solid grey;
 text-align: justify;
 }
 
+.divuno{
+	
+	border: 5px solid grey;
+	width: 155px;
+	position:relative;
+	float:left;
+}
+.divdos{
+	border: 1px solid grey;
+	width: 155px;
+	position: relative; 
+    float:left;
+}
+.divtres{
+   border: 1px solid grey;
+	width: 308px;
+	position: relative; 
+    float:left;
 
+
+}
+.input{
+   width: 300px;
+
+}
+.divcuatro{
+border: 1px solid grey;
+	width: 155px;
+	position: relative; 
+    float:left;
+    border-top-right-radius: 0.5em;
+
+}
 </style>
 <meta charset="utf-8" />
 <title>Hoja de vida Minerva</title>
 </head>
 <body>
+<div>	
 <img src="images.jpg" />
-<img src="c.jpg" />
-<left><img src="1.jpg" />	</left>
-<center><h3>Hoja de Vida</h3></center>
+<img  class="imgderecha"src="c.jpg" />
+<left><img class="imgderecha" src="1.jpg" />	</left>
+</div>
+
 <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
 <p>
+	<div class="divg">
+		<div class="divuno">
 Ciudad: <input type="text" name="name_control" autofocus required />
-
+</div>
+<div class="divdos">
 Fecha: <input type="date" name="date_control" required />
-
-Empleo o cargo solicitado: <input type="name" name="name_control" />
-
+</div>
+<div class="divtres">
+Empleo o cargo solicitado: <input class="input" type="name" name="name_control" />
+</div>
+<div class="divcuatro">
 Codigo Cargo: <input type="number" name="number_control" />
+</div>
+</div>
+
+<br />
 <br />
 <center><h1 class="prueba">l. Datos Personales:<h1> </center>
 <p>
@@ -221,5 +269,6 @@ Motivo de retiro: <input type="name" name="name_control" />
 <input type="submit" value="Submit!" />
 </p>
 </form>
+
 </body>
 </html>
