@@ -2,66 +2,158 @@
 <html>
 <head>
 <style type="text/css">
- h1{
- 	border-radius: 0.5em;
 
-        
-    }
-form{margin: 2px;
-     border:radium;
-     padding:initial;
 
 }
-body{ 
-background: white;
-
-} 
-img{
-border:1px;
-vspace=3; 
-hspace=3; 
-
-}
-.imgderecha{
-	margin: right;
-}
-p{
-border: 5px solid grey;
-text-align: justify;
-}
-
-.divuno{
-	
-	border: 5px solid grey;
+.img1 {
+	position: relative;
+	float:left;
+	height: 100px;
 	width: 155px;
+	margin-top: 5px;
+	margin-right: 45px;
+}
+.img2{
+height: 100px;
+	width: 300px;
+	float: right;
+	margin-top: 30px;
+	margin-left: 150px;
+
+}
+.img3 {
+	height: 150px;
+	width: 200px;
+	float: right;
+	margin-left: 120px;
+} 
+.primeraparte{
+   border: 1px solid grey;
+  margin-left: 120px;
+  width: px;
+  position: relative;
+  padding: 5px
+  border-radius: 0.5em;
+  font: 10px arial;
+ 
+}
+.primeraparte1{
+   border: 1px solid grey;
+	width: px;
 	position:relative;
 	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	border-top-left-radius: 0.5em;
 }
-.divdos{
-	border: 1px solid grey;
-	width: 155px;
-	position: relative; 
-    float:left;
+.primeraparte2{
+  border: 1px solid grey;
+	width: px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	border-top-left: 0.5em;
 }
-.divtres{
+.primeraparte3{
+  border: 1px solid grey;
+	width: px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	border-top-left: 0.5em;
+}
+.primeraparte4{
+  border: 1px solid grey;
+	width: px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	border-top-right-radius: 0.5em;
+}
+.datospersonales{
+  border: 1px solid grey;
+  margin-left: 120px;
+  width: px;
+  position: relative;
+  border-radius: 0.5em;
+  font: 10px arial;
+}
+.segundaparte1{
    border: 1px solid grey;
-	width: 308px;
-	position: relative; 
-    float:left;
-
+	width: 280px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	border-top-left-radius: 0.5em;
+}
+.segundaparte2{
+  border: 1px solid grey;
+	width: 280px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	border-top-radius: 0.5em;
+}
+.segundaparte3{
+  border: 1px solid grey;
+	width: 280px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	border-top-right-radius: 0.5em;
+}
+.segundapartetres1{
+	border: 1px solid grey;
+	width: 300px;
+	position:relative;
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	
+	border-radius: 0.5em;
+}
+.segundaparte4{
+   border: 1px solid grey;
+	width: 280px;
+	position:absolute;
+	margin-top: 33px; 
+	float:left;
+	margin-left: 1px;
+	padding: 5px;
+    
+	margin-right: 1px;
+	border-top-left-radius: 0.5em;
+}
+.segundaparte5{
+   border: 1px solid grey;
+	width: 280px;
+	position:absolute;
+	margin-top: 33px; 
+	float:right;
+	margin-left: 294px;
+	padding: 5px;
+    
+	margin-right: 1px;
+	border-top-radius: 0.5em;
+}
+.segundaparte6{
+    border: 1px solid grey;
+	width: 280px;
+	position:absolute;
+	margin-top: 33px; 
+	float:right;
+	margin-left: 587px;
+	padding: 5px;
+    
+	margin-right: 1px;
+	border-top-right-radius: 0.5em;
 
 }
-.input{
-   width: 300px;
-
-}
-.divcuatro{
-border: 1px solid grey;
-	width: 155px;
-	position: relative; 
-    float:left;
-    border-top-right-radius: 0.5em;
-
 }
 </style>
 <meta charset="utf-8" />
@@ -69,94 +161,131 @@ border: 1px solid grey;
 </head>
 <body>
 <div>	
-<img src="images.jpg" />
-<img  class="imgderecha"src="c.jpg" />
-<left><img class="imgderecha" src="1.jpg" />	</left>
+<img class="img1" src="images.jpg" />
+<img  class="img2"src="1.jpg" />
+<img class="img3" src="c.jpg" />	
 </div>
 
 <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
-<p>
-	<div class="divg">
-		<div class="divuno">
+<p align="justify">
+	<div class="primeraparte">
+		<div class="primeraparte1">
 Ciudad: <input type="text" name="name_control" autofocus required />
 </div>
-<div class="divdos">
+<div class="primeraparte2">
 Fecha: <input type="date" name="date_control" required />
 </div>
-<div class="divtres">
+<div class="primeraparte3">
 Empleo o cargo solicitado: <input class="input" type="name" name="name_control" />
 </div>
-<div class="divcuatro">
+<div class="primeraparte4">
 Codigo Cargo: <input type="number" name="number_control" />
 </div>
 </div>
 
 <br />
 <br />
-<center><h1 class="prueba">l. Datos Personales:<h1> </center>
+
+<div class="datospersonales">
+<center><h3 >l. Datos Personales:</h3> </center>
+
 <p>
 <br />
+<div class="segundaparte1">
 Primer Apellido: <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte2">
 Segundo Apellido: <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte3">
 Nombres: <input type="name" name="name_control" />
+</div>
 <br />
+<div class="segundapartetres1">
+	<img class="img3" src="JORDAN.jpg" />
+</div>
+<div class="segundaparte4">
 Profesión, Ocupación u oficio: <input type="name" name="name_control"  />
-
+</div>
+<div class="segundaparte5">
 Años de experiencia Laboral: <input type="number" name="number_control" />
-
+</div>
+<div class="segundaparte6">
 ¿Cuanto es su aspiración salarial?: <input type="number" name="number_control" />
+</div>
 <br />
+<div class="segundaparte7">
 Lugar de Nacimiento : <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte8">
 (*)Fecha de Nacimiento: <input type="date" name="date_control" />
-
+</div>
+<div class="segundaparte9">
 (*)Estado Civil: <input type="name" name"name_control" />
+</div>
 <br/>
+<div class="segundaparte10">
 Dirección Domicilio: <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte11">
 Barrio: <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte12">
 Telefono: <input type="number" name="number_control" />
+</div>
 <br/>
+<div class="segundaparte13">
 Cedula de Ciudadania: <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte14">
 (**) Libreta Militar No.: <input type="number" name="number_control" />
+
 <br/>
+
 Expedida en: <input type="name" name="name_control" />
 
 Distrito No.: 
 <input type="radio" name="name" value="PrimeraClase">Primera Clase
 <input type="radio" name="name" value="SegundaClase">Segunda Clase
-
-
+</div>
+</div>
+<div class="segundaparte15">
 Licencia de Conducción: <input type="number" name="number_control" />
-
+</div>
+<div class="segundaparte16">
 Vivienda Propia?: 
 <input type="radio" name="name" value="si">Si
 <input type="radio" name="name" value="no">No
-
-
+</div>
+<div class="segundaparte18">
 Nombre del Arrendador: <input type="name" name="name_control" />
-
+</div>
+<div class="segundaparte19">
 Telefono: <input type="number" name="number_control" />
-
+</div>
+<div class="segundaparte20">
 Valor de Arriendo: <input type="number" name="number_control" />
+</div>
 <br/>
+<div class="segundaparte21">
 Esta trabajando actualmente?: 
-
-En que empresa?: <input type="name" name="name_control" />
-
-Tipo de Contrato: <input type="name" name="name_control" />
-
-<br/>
 <input type="radio" name="name" value="si">Si
 <input type="radio" name="name" value="no">No
-
+</div>
+<div>
+En que empresa?: <input type="name" name="name_control" />
 
 <input type="radio" name="empleado" value="si">Empleado
 <input type="radio" name="independiente" value="no">Independiente
+</div>
+<div class="segundaparte22">
+Tipo de Contrato: <input type="name" name="name_control" />
+
+</div>
+<br/>
+
+
+
 
 <br/>
 </p>
