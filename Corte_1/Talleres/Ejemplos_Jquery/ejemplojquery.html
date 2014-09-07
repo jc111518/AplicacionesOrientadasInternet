@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style> 
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}
+</style>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#prueba").hide();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".test").hide();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("h4").hide();
+  });
+  $("#show").click(function(){
+    $("h4").show();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#start").click(function(){
+    $("div").animate({left:'100px'},5000);
+    $("div").animate({fontSize:'3em'},5000);
+  });
+  
+  $("#stop").click(function(){
+    $("div").stop();
+  });
+
+  $("#stop2").click(function(){
+    $("div").stop(true);
+  });
+
+  $("#stop3").click(function(){
+    $("div").stop(true,true);
+  });
+  
+});
+</script> 
+
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").remove();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").empty();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").remove(".italic");
+  });
+});
+</script>
+	<meta charset="UTF-8">
+	<title>Ejemplos de JQuery</title>
+</head>
+<body>
+	<h3><center>Ejemplos de JQuery</center></h3>
+<!-- El siguiente codigo en jquery sirve para dar clic en la palabra y oculta la vista del usuario -->
+<h2>Titulo prueba de .hide y oculta la palabra</h2>
+<p>Si cliquea esto. Desaparecera</p>
+<p>Clic de nuevo</p>
+<p>Clic otra vez</p>
+
+<!-- El siguiente codigo en jquery igual que el anterior pero con la diferencia que es definida por id-->
+<h2>Titulo prueba de .hide con id</h2>
+<p>Parrafo de preuba.</p>
+<p id="prueba">Este parrafo se oculta por el id que llama</p>
+<button>Hacer Clic</button>
+
+<!-- El siguiente codigo en jquery igual que el anterior pero con la diferencia que es definida por la clase -->
+<h2 class="test">Titulo de .hide con clase</h2>
+<p class="test">Este parrafo desaparece con el clic en el boton</p>
+<p>Otro parrafo diferente </p>
+<button>Dar clic</button>
+
+<!-- El siguiente codigo en jquery igual que el anterior pero con la diferencia que este oculatara el boton que se presione -->
+<h2>Titulo de .hide pero oculta el boton</h2>
+<p>parrafo normal</p>
+<p>Otro parrafo igual que el anterior</p>
+<button>Dar Clic</button>
+
+<!-- El siguiente codigo en jquery muestra la opcion de show y hide, es decir ocultar y mostrar -->
+<h4>Titulo de opciones .hide y .show</h4>
+<button id="hide"> Dar clic para ocultar</button>
+<button id="show">SDar para mostrar</button>
+
+<!-- El siguiente dcodigo jquery oculta los dos parrafos o todos y tambien los muestra -->
+<h3>Titulo de TOOGLLE </h3>
+<button>Toggle</button>
+<p>Contenido en este parrafo se oculta</p>
+<p>Igual para este</p>
+
+
+<!-- El siguiente codigo en jquery sirve para hacer un deslizador, y se activa cuando se da clic en un lugar predeterminado -->
+<h3> Titulo de Stop sliding</h3>
+<button id="stop">Stop sliding</button>
+<div id="flip">Clicto para  deslizar abajo el panel</div>
+<div id="panel">Prueba del slide con jquery!</div>
+
+<!-- El siguiente codigo en jquery sirve para hacer un deslizador, la diferencia con el anterior es que se puede detener, pausar y volver a iniciar -->
+<h3>Titulo de slider con parametros</h3>
+<button id="start">Iniciar</button>
+<button id="stop">Pausar</button>
+<button id="stop2">Detener</button>
+<button id="stop3">Finalizar</button>
+<p>El boton iniciar, desliza el panel</p>
+<p>El boton pausar, deja quieto la caja en donde se haya movido.</p>
+<p>El boton detener, coloca la caja en inicio</p>
+<p>El boton finalizar reanuda todo el jquery</p> 
+
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">Hola es deslizar con parametros</div>
+
+
+<!-- El siguiente codigo jquery elimnia el elemento de algun div preseleccionado por el programador-->
+<h3>El titulo de eliminar el div</h3>
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+Texto dentro del div
+<p>Este parrafo esta en el div</p>
+<p>Otro parrafo en un div</p>
+
+</div>
+<br>
+<button>Eliminar elemento del div</button>
+
+<!-- El siguiente codigo jquery limpia el elemento de algun div preseleccionado por el programador-->
+<h3>Titulo vacir el elemento de un div</h3>
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+texto dentro del div
+<p>fdgdfgfdgdfgfdgfd</p>
+<p>fgfdgdfgdfgdfgd</p>
+
+</div>
+<br>
+<button>vaciar elemento del div </button>
+
+<!--  Eleminar elementos de div de acuerdo a la class predefinida -->
+<h3>Titulo eleminar elementos del div con class italica</h3>
+<p>Text detro del div</p>
+<p class="italic"><i>text div</i></p>
+<p class="italic"><i>text div div.</i></p>
+<button>eleimnar p elementos con  class="italic"</button>
+
+
+</body>
+</html>
