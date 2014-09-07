@@ -1,0 +1,3 @@
+Ejemplo Ajax en siguiente URL:
+
+http://edu-labs.org/Jordan_PruebaAjax/Ajax.html
