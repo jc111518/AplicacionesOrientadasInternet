@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").load("demo_test.txt");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("demo_test.asp",function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("demo_test_post.asp",
+    {
+      name:"Donald Duck",
+      city:"Duckburg"
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+
+	<meta charset="UTF-8">
+	<title>Ejemplo con Ajax</title>
+</head>
+<body>
+<h3><center>Ejemplos con ajax</center></h3>
+
+<!-- Ajax con este ejemplo obtiene el texto y lo desccarga con ayuda del servidor -->
+<h3>Titulo Primer ajax obteniendo un archivo txt de un servidor</h3>
+<div id="div1"><h2>Jquery y ajax descargar de txt</h2></div>
+<button>Obtener archivo externo del servidor</button>
+
+<!-- Obtener infomracion de archivo o otros por metodo get -->
+<<h3> Metodo get</h3>>
+<button>EEnviar un HTTP GET requisito a una pagina y toma el resultado devuelta</button>
+
+
+<!-- Metodo post por ajax-->
+<h3> Metodo POST  con ajax</h3>
+<button>Enviar un HTTP POST requisito a una pagina y toma el resultado devuelta</button>
+</body>
+</html>
